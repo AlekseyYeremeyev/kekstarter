@@ -13,176 +13,106 @@ module.exports = function() {
         title: faker.random.word(),
         date: faker.date.past(),
         components: {
+          "input": {},
           "button": {
-            "primary": {
-              "padding": "8px 25px",
-              "border-radius": "3px",
-              "background": faker.internet.color(),
-              "border": "1px solid "+faker.internet.color(),
-              "color": "#fff",
+            "default": {
+              "background": "#2199E8",
+              "border-radius": "4px",
+              "font-family": "HelveticaNeue",
+              "font-size": "15px",
+              "color": "#FFFFFF",
+              "padding": "10px 15px",
               "&:hover": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
+                "background": "#1A84E3",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#FFFFFF",
+                "padding": "10px 15px"
               },
               "&:active": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
+                "background": "#1469B5",
+                "box-shadow": "inset 1px 1px 0 0 rgba(0,0,0,0.10)",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#8CC1F1",
+                "padding": "10px 15px"
+              },
+              "&:disabled": {
+                "background": "#B3B0B3",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#FFFFFF",
+                "padding": "10px 15px"
+              }
+            },
+            "danger": {
+              "background": "#EC5840",
+              "border-radius": "4px",
+              "font-family": "HelveticaNeue",
+              "font-size": "15px",
+              "color": "#FFFFFF",
+              "padding": "10px 15px",
+              "&:hover": {
+                "background": "#E43426",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#FFFFFF",
+                "padding": "10px 15px"
+              },
+              "&:active": {
+                "background": "#B6291E",
+                "box-shadow": "inset 1px 1px 0 0 rgba(0,0,0,0.10)",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#E9BFBB",
+                "padding": "10px 15px"
+              },
+              "&:disabled": {
+                "background": "#B3B0B3",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#FFFFFF",
+                "padding": "10px 15px"
               }
             },
             "hollow": {
-              "padding": "8px 25px",
-              "border-radius": "3px",
-              "border": "1px solid "+faker.internet.color(),
-              "background": faker.internet.color(),
-              "color": "#fff",
+              "background": "#FFFFFF",
+              "border": "1px solid #2199E8",
+              "border-radius": "4px",
+              "font-family": "HelveticaNeue",
+              "font-size": "15px",
+              "color": "#2199E8",
+              "padding": "10px 15px",
               "&:hover": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
+                "border": "1px solid #177AE1",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#177AE1",
+                "padding": "10px 15px"
               },
               "&:active": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
-              }
-            },
-            "success": {
-              "padding": "8px 25px",
-              "border-radius": "3px",
-              "border": "1px solid "+faker.internet.color(),
-              "background": faker.internet.color(),
-              "color": "#fff",
-              "&:hover": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
+                "opacity": "0.6",
+                "border": "1px solid #177AE1",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#177AE1",
+                "padding": "10px 15px"
               },
-              "&:active": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
-              }
-            },
-            "warning": {
-              "padding": "8px 25px",
-              "border-radius": "3px",
-              "border": "1px solid "+faker.internet.color(),
-              "background": faker.internet.color(),
-              "color": "#fff",
-              "&:hover": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
-              },
-              "&:active": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
-              }
-            },
-            "alert": {
-              "padding": "8px 25px",
-              "border-radius": "3px",
-              "border": "1px solid "+faker.internet.color(),
-              "background": faker.internet.color(),
-              "color": "#fff",
-              "&:hover": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
-              },
-              "&:active": {
-                "padding": "8px 25px",
-                "border-radius": "3px",
-                "border": "1px solid "+faker.internet.color(),
-                "color": "#fff",
-                "background": faker.internet.color(),
-              }
-            }
-          },
-          "input": {
-            "meta": {
-              "type": "text"
-            },
-            "secondary": {
-              "padding": "8px 10px",
-              "background": "transparent",
-              "border": "0",
-              "border": "1px solid "+faker.internet.color(),
-              "border-radius": "3px",
-              "color": faker.internet.color(),
-              "outline": "none",
-              "&:hover": {
-                "padding": "8px 10px",
-                "border-color": faker.internet.color(),
-                "color": faker.internet.color(),
-                "background": "transparent",
-              },
-              "&:active": {
-                "padding": "8px 10px",
-                "border-color": faker.internet.color(),
-                "color": faker.internet.color(),
-                "background": faker.internet.color()
-              }
-            },
-            "error": {
-              "padding": "8px 10px",
-              "border": "0",
-              "border": "1px solid "+faker.internet.color(),
-              "border-radius": "3px",
-              "background": "transparent",
-              "color": faker.internet.color(),
-              "outline": "none",
-              "&:hover": {
-                "padding": "8px 10px",
-                "border-color": faker.internet.color(),
-                "color": faker.internet.color()
-              },
-              "&:active": {
-                "padding": "8px 10px",
-                "border-color": faker.internet.color(),
-                "color": faker.internet.color(),
-                "background": faker.internet.color()
-              }
-            },
-            "disabled": {
-              "padding": "8px 10px",
-              "border": "0",
-              "border": "1px solid "+faker.internet.color(),
-              "border-radius": "3px",
-              "background": "transparent",
-              "color": faker.internet.color(),
-              "outline": "none",
-              "&:hover": {
-                "padding": "8px 10px",
-                "border-color": faker.internet.color(),
-                "color": faker.internet.color()
-              },
-              "&:active": {
-                "padding": "8px 10px",
-                "border-color": faker.internet.color(),
-                "color": faker.internet.color(),
-                "background": faker.internet.color()
+              "&:disabled": {
+                "border": "1px solid #9B9B9B",
+                "border-radius": "4px",
+                "font-family": "HelveticaNeue",
+                "font-size": "15px",
+                "color": "#9B9B9B",
+                "padding": "10px 15px"
               }
             }
           }

@@ -14,6 +14,13 @@ export default class ProjectComponent extends Component {
 
     return map(modifiers, (modifier, name) => {
       const className = name.slice(1);
+      const hasDisabledState = modifier.hasOwnProperty('&:disabled');
+
+      const disabledElement = hasDisabledState ? React.DOM[type]({
+        className,
+        children,
+        disabled: true
+      }) : null;
       const element = React.DOM[type]({
         className,
         children
@@ -23,6 +30,9 @@ export default class ProjectComponent extends Component {
         <div key={ name } className={ style.componentsItem }>
           <h5>{ name }</h5>
           { element }
+          <div>
+            { disabledElement }
+          </div>
         </div>
       );
     });
