@@ -1,0 +1,13 @@
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.icon {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background: url("../../assets/loading.svg") no-repeat center center;
+}
