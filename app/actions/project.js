@@ -7,8 +7,8 @@ import projectsSource from 'sources/projects';
 export default class ProjectActions {
   get(id) {
     return (dispatch) => {
-      return projectsSource.get(id).then((project) => {
-        const { components, modifiers } = createStyleTree(project.components);
+      return projectsSource.get(id).then(({ project }) => {
+        const { components, modifiers } = createStyleTree(project.data);
 
         return convertToString(modifiers).then(({ css }) => {
           dispatch({ project, components, css });

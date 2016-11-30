@@ -1,6 +1,6 @@
 module.exports = {
-  target: 'http://react-base.herokuapp.com',
-  apiTarget: 'http://react-base-api.herokuapp.com',
+  target: 'http://kekstarter.herokuapp.com',
+  apiTarget: 'http://kekstarter.herokuapp.com',
   storageKey: 'user_session',
   session: {
     tokenKey: 'authentication_token',

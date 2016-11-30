@@ -53,7 +53,7 @@ export default class ProjectDetail extends Component {
     return (
       <Loading isLoading={ isLoading }>
         <div>
-          <h1 className={ style.projectTitle }>{ project.title }</h1>
+          <h1 className={ style.projectTitle }>{ project.name }</h1>
             <div className={ style.project }>
               <style>{ css }</style>
               <div className={ style.projectComponents }>

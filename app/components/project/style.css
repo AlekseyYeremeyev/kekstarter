@@ -24,3 +24,7 @@
 .componentsItem {
   margin: 10px 15px;
 }
+
+.componentDisabled {
+  margin-top: 10px;
+}

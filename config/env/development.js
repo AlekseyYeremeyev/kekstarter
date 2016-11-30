@@ -1,6 +1,6 @@
 module.exports = {
-  target: 'http://localhost:3000',
-  apiTarget: 'http://localhost:3000',
+  target: 'http://kekstarter.herokuapp.com',
+  apiTarget: 'http://kekstarter.herokuapp.com',
   apiPath: '/',
   storageKey: 'user_session',
   session: {

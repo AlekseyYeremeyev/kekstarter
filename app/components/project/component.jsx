@@ -30,7 +30,7 @@ export default class ProjectComponent extends Component {
         <div key={ name } className={ style.componentsItem }>
           <h5>{ name }</h5>
           { element }
-          <div>
+          <div className={ style.componentDisabled }>
             { disabledElement }
           </div>
         </div>

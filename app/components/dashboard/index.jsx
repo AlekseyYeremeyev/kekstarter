@@ -33,12 +33,12 @@ export default class Dashboard extends Component {
     return projects.map((project) => {
       return (
         <Link
-          key={ project.id }
-          to={ paths.project(project.id) }
+          key={ project._id }
+          to={ paths.project(project._id) }
           className={ style.item }
         >
-          <div>{ project.title }</div>
-          <div className={ style.date }>{ project.date }</div>
+          <div>{ project.name }</div>
+          <div className={ style.date }>{ project.updatedAt }</div>
         </Link>
       );
     });

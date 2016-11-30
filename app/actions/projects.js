@@ -6,7 +6,7 @@ import projectsSource from 'sources/projects';
 export default class ProjectsActions {
   fetch() {
     return (dispatch) => {
-      return projectsSource.fetch().then((projects) => {
+      return projectsSource.fetch().then(({ projects }) => {
         dispatch(projects);
       });
     };
