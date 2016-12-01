@@ -9,3 +9,7 @@ a:hover {
 button {
   border-style: initial;
 }
+
+input {
+  outline: none;
+}
