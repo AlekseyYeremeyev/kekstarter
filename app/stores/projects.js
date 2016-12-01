@@ -3,8 +3,8 @@ import { createStore } from 'alt-utils/lib/decorators';
 import ProjectsActions from 'actions/projects';
 
 @createStore(Alt)
-export default class ProjectStore {
-  static displayName = 'ProjectStore'
+export default class ProjectsStore {
+  static displayName = 'ProjectsStore'
 
   constructor() {
     this.projects = [];
