@@ -15,15 +15,18 @@ export default class ProjectComponent extends Component {
     return map(modifiers, (modifier, name) => {
       const className = name.slice(1);
       const hasDisabledState = modifier.hasOwnProperty('&:disabled');
+      const isInput = type === 'input';
 
       const disabledElement = hasDisabledState ? React.DOM[type]({
         className,
         children,
-        disabled: true
+        disabled: true,
+        defaultValue: isInput ? type : ''
       }) : null;
       const element = React.DOM[type]({
         className,
-        children
+        children,
+        defaultValue: isInput ? type : ''
       });
 
       return (
